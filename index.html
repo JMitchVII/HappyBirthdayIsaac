@@ -29,9 +29,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/GLBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/GLBuild.data.gz",
-        frameworkUrl: buildUrl + "/GLBuild.framework.js.gz",
-        codeUrl: buildUrl + "/GLBuild.wasm.gz",
+        dataUrl: buildUrl + "/GLBuild.data",
+        frameworkUrl: buildUrl + "/GLBuild.framework.js",
+        codeUrl: buildUrl + "/GLBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Harrison Birthday",
@@ -65,9 +65,7 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-        loadingBar.style.display = "block";
-
-        var unityFramework;
+      loadingBar.style.display = "block";
 
       var script = document.createElement("script");
       script.src = loaderUrl;
